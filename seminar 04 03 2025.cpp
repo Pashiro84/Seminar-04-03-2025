@@ -1,16 +1,17 @@
 // Широков Павел и Шамсутдинова Аллат, ИМ24-01Б, 7 вариант
+#define _CTR_SECURE_NO_WARNINGS
 #include <iostream>
-
+#include <string.h>
 using namespace std;
 
-const int max_lines=50;
+
 
 struct DynamicString {
     char* data; 
     int length; 
 };
 
-
+const int max_lines=50;
 DynamicString substring(const DynamicString& str, size_t pos, size_t len) 
 {
     char j[max_lines] = "\0";
