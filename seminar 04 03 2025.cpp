@@ -1,26 +1,21 @@
-#define _CTR_SECURE_NO_WARNINGS
 #include <iostream>
-#include <string.h>
-#include <Windows.h>
 
 using namespace std;
 
 const int max_lines=50;
 
-// Структура для динамической строки
 struct DynamicString {
-    char* data; // Указатель на массив символов
-    int length; // Длина строки
+    char* data; 
+    int length; 
 };
 
-// Функция для взятия из строки str подстроки длиной len начиная с позиции pos. Необходимо проверить допустимы ли значения pos и len.
 
 DynamicString substring(const DynamicString& str, size_t pos, size_t len) 
 {
     char j[max_lines] = "\0";
     DynamicString V = {j, 0};
     char N[max_lines];
-    // Напишите код функции
+   
     if (str.length >= len + pos)
     {
         int i = pos;
