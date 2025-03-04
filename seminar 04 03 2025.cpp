@@ -1,3 +1,4 @@
+// Широков Павел и Шамсутдинова Аллат, ИМ24-01Б, 7 вариант
 #include <iostream>
 
 using namespace std;
