@@ -25,10 +25,19 @@ DynamicString substring(const DynamicString& str, size_t pos, size_t len)
         for (; i < pos + len; i++)
         {
             N[i] = str.data[i];
+            cout << N << endl;
         }
         N[i] = '\0';
+        cout << N << endl;
         int lent = len;
         DynamicString V = {N, lent };
+        return V;
+    }
+    else 
+    {
+        char None[max_lines] = "None";
+        int i = 4;
+        DynamicString V = {None, i };
         return V;
     }
 }
@@ -37,7 +46,7 @@ int main()
 {
     char Sl[max_lines] = "SFU";
     DynamicString S = { Sl, 3};
-    DynamicString N = substring(S, 1, 1);
+    DynamicString N = substring(S, 1, 4);
     cout << N.data << " " << N.length << endl;
     return 0;
 }
